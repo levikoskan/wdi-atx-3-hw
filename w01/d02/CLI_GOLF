@@ -1,0 +1,212 @@
+Last login: Mon Nov 30 17:31:10 on ttys000
+N/A: version "stable" is not yet installed
+koskan ~
+$ cd desktop/kitchen
+koskan ~/desktop/kitchen
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+koskan ~/desktop/kitchen
+$ cd fridge/trashcan/sink
+koskan ~/desktop/kitchen/fridge/trashcan/sink
+$ rm delete-me.txt
+removed ‘delete-me.txt’
+koskan ~/desktop/kitchen/fridge/trashcan/sink
+$ mkdir clean-dishes.txt
+mkdir: cannot create directory ‘clean-dishes.txt’: File exists
+koskan ~/desktop/kitchen/fridge/trashcan/sink
+$ mkdir drying-rack
+mkdir: created directory ‘drying-rack’
+koskan ~/desktop/kitchen/fridge/trashcan/sink
+$ mv clean-dishes.txt sink/drying-rack
+‘clean-dishes.txt’ -> ‘sink/drying-rack’
+mv: cannot move ‘clean-dishes.txt’ to ‘sink/drying-rack’: No such file or directory
+koskan ~/desktop/kitchen/fridge/trashcan/sink
+$ mv clean-dishes.txt ~/desktop/kitchen/fridge/trashcan/sink/drying-rack
+‘clean-dishes.txt’ -> ‘/Users/Lexie/desktop/kitchen/fridge/trashcan/sink/drying-rack/clean-dishes.txt’
+koskan ~/desktop/kitchen/fridge/trashcan/sink
+$ ls
+dirty-dishes.txt  drying-rack/
+koskan ~/desktop/kitchen/fridge/trashcan/sink
+$ cd ..
+koskan ~/desktop/kitchen/fridge/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt  sink/
+koskan ~/desktop/kitchen/fridge/trashcan
+$ mv sink ~/desktop/kitchen
+‘sink’ -> ‘/Users/Lexie/desktop/kitchen/sink’
+koskan ~/desktop/kitchen/fridge/trashcan
+$ cd ..
+koskan ~/desktop/kitchen/fridge
+$ mv trashcan ~/desktop/kitchen
+‘trashcan’ -> ‘/Users/Lexie/desktop/kitchen/trashcan’
+koskan ~/desktop/kitchen/fridge
+$ ls
+diapers.txt  freezer/  milk.txt
+koskan ~/desktop/kitchen/fridge
+$ rm diapers.txt
+removed ‘diapers.txt’
+koskan ~/desktop/kitchen/fridge
+$ cd freezer
+koskan ~/desktop/kitchen/fridge/freezer
+$ rm couch.txt
+removed ‘couch.txt’
+koskan ~/desktop/kitchen/fridge/freezer
+$ cd ..
+koskan ~/desktop/kitchen/fridge
+$ ls
+freezer/  milk.txt
+koskan ~/desktop/kitchen/fridge
+$ cd
+koskan ~
+$ cd desktop/kitchen
+koskan ~/desktop/kitchen
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   ├── cereal.txt
+│   └── crisper-drawer
+│       └── lettuce.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+koskan ~/desktop/kitchen
+$ rm cans.txt
+removed ‘cans.txt’
+koskan ~/desktop/kitchen
+$ cd pantry
+koskan ~/desktop/kitchen/pantry
+$ mc cripser-drawer ~/desktop/kitchen/fridge
+-bash: mc: command not found
+koskan ~/desktop/kitchen/pantry
+$ cd ..
+koskan ~/desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   ├── cereal.txt
+│   └── crisper-drawer
+│       └── lettuce.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 11 files
+koskan ~/desktop/kitchen
+$ cd pantry
+koskan ~/desktop/kitchen/pantry
+$ mv cripser-drawer ~/desktop/kitchen/fridge
+mv: cannot stat ‘cripser-drawer’: No such file or directory
+koskan ~/desktop/kitchen/pantry
+$ mv crisper-drawer ~/desktop/kitchen/fridge
+‘crisper-drawer’ -> ‘/Users/Lexie/desktop/kitchen/fridge/crisper-drawer’
+koskan ~/desktop/kitchen/pantry
+$ ls
+cans.txt  cereal.txt
+koskan ~/desktop/kitchen/pantry
+$ cd ..
+koskan ~/desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 11 files
+koskan ~/desktop/kitchen
+$ cd fridge/crisper-drawer
+koskan ~/desktop/kitchen/fridge/crisper-drawer
+$ touch apples.txt
+koskan ~/desktop/kitchen/fridge/crisper-drawer
+$ ls
+apples.txt  lettuce.txt
+koskan ~/desktop/kitchen/fridge/crisper-drawer
+$ cd ../..
+koskan ~/desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+koskan ~/desktop/kitchen
+$ 
