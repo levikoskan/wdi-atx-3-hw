@@ -1,12 +1,36 @@
-/* 
+body {
+  color: grey;
 
-## Style Hints: 
+}
+.box {
+  min-width: 910px;
+  margin: 0px auto;
+  width: 75%;
+}
 
-Body Font Size = 12px
-	 Line Height = 17px
-	 Font Family = "Times New Roman", serif
-	 Font Color = #656565
+h1 {
+  font-family: Lora;
+}
 
-Link Hover Color = #20222a
+p {
 
-*/
+  margin: 0px;
+}
+span {
+  color: #1B89CD ;
+}
+#special {
+
+  margin: 40px 0px 0px 0px;
+}
+ul {
+  padding: 0px;
+}
+li {
+  display: inline-block;
+  border: 3px solid #A2A2A2;
+  max-width: 23%;
+}
+li img{
+  width: 100%;
+}
