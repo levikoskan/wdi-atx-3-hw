@@ -1,0 +1,35 @@
+body{
+  background-image: url(css/background.png);
+}
+
+
+#navbar {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+#musicApp {
+  background-color: grey;
+  text-align: center;
+}
+
+h1{
+  color: yellow;
+  font-size: 5em;
+}
+
+#icons {
+  text-align: right;
+}
+#interests {
+  text-align: left;
+}
+.bluebox {
+  height: 18em;
+  width: 18em;
+  background-color: lightblue;
+}
+
+.col-md-12 {
+  text-align: center;
+}
