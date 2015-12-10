@@ -1,4 +1,4 @@
-// 1. Make the function deck_o_cards assemble an array of cards using the provided suits and values arrays. 
+// 1. Make the function deck_o_cards assemble an array of cards using the provided suits and values arrays.
 // Each card in the deck should be an object formatted as: {suit: 'hearts', value: 'A'}
 function deck_o_cards() {
 	var values = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King', 'Ace'];
@@ -15,7 +15,7 @@ function deck_o_cards() {
 	// Console log the results
 }
 
-// Fisher-Yates Shuffle 
+// Fisher-Yates Shuffle
 // http://stackoverflow.com/a/6274398
 function shuffle(array) {
     var counter = array.length, temp, index;
