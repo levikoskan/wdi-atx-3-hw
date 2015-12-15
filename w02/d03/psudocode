@@ -1,0 +1,35 @@
+var card1 = {
+  suit:
+  values:
+}
+
+I want to make a object creator that makes all 52 cards.
+  that object needs to iterate throw each array and take a suit and apply
+  a value. each suite needs one of each value.
+I want to push each card to a new array
+I want to pull a random card from the array
+
+function Card(value,suite) {
+  this.value = value;
+  this.suit = suite;
+}
+
+
+I want to go into value array take that value and apply it
+to each suit then move on to the next value and do the same thing
+
+function newCard() {
+  for(var i =0; i < values.length; i++){
+    var valueHalf = value[i];
+
+  }
+}
+
+function suitCard() {
+  for (var i = 0; i < suit.length; i++) {
+    var suitHalf = suite[i]
+
+  }
+}
+
+suite[i]*4+value[i]
