@@ -1,28 +1,41 @@
-orders = {}
+$orders = {}
 
-def lunch_order()
 
-  prints "Name of order:"
-  name = gets.chomp
-  name.capitalize!
+def foodOrder
+    puts "Name of order:"
+    $name = gets.chomp
+    $name.capitalize!
+    $orders[$name] = ''
 
-  prints "#{name} wants to order:"
-  food = gets.chomp
+    puts "#{$name} wants to order:"
 
-  order_complete()
 
-  def order_complete()
-    prints "Done with order? y/n?"
-    done_ordering = gets.chomp
-    done_ordering.downcase!
+def add_Another
+    puts "Add another item to the order? (y/n)"
+        answer = gets.chomp.downcase
+        if answer == "y"
+            puts "What else would you like?"
+            order
+        elsif answer == "n"
+            puts "Great, will anyone else like to order? (y/n)"
+            anyoneElse = gets.chomp.downcase
+                if anyoneElse == "y"
+                    foodOrder
+                else puts "All orders " + $orders.to_s
+                end
+        else puts "you suck, enter y/n"
+            #Add another item method
+            add_Another
+        end
+   end
 
-    if done_ordering != "y" || "n"
-        print "Please resopond with y/n"
-        order_complete()
-    elsif done_ordering == "y"
-        #do something here
-    else
-      lunch_order()
+   def order
+    $food = ''
+    $food += gets.chomp + " "
+    $orders[$name] << $food
+    add_Another
     end
-  end
+
+    order
 end
+    foodOrder
