@@ -6,6 +6,13 @@
 <body>
 
 <!-- magic 8 ball view -->
+  <h1>8 ball</h1>
+  <ul>
+    <li><%=@question%>?</li>
+    <% response = rand(@answer.length) %>
+    <li><%= @answer[response] %> </li>
+
+  </ul>
 
 </body>
 </html>
