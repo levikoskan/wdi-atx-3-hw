@@ -1,9 +1,13 @@
 require_relative 'spec_helper'
 require_relative '../bank'
-
+p "hello"
 describe Bank do
+<<<<<<< HEAD
   bank = Bank.new "Lucky"
 
+=======
+p "hello"
+>>>>>>> 29252fb422b89c4863a9c11fdb29f535f41d624d
   describe ".new" do
     it "creates a Bank object" do
       # When Bank.new is called, it should create a bank object\
@@ -24,10 +28,17 @@ describe Bank do
 
   describe "#create_account" do
     it "create an account" do
+<<<<<<< HEAD
       # Calling bank.create_account with the correct parameters should add
       # the account name and account value to the bank.accounts hash
       bank.create_account("MoeMoney", 500)
       expect(bank.accounts).to have_key("MoeMoney")
+=======
+      bank = Bank.new("Chase")
+      bank.create_account("Tom", 200)
+      toms_account = accounts["Tom"]
+      expect (toms_account).to eq(200)
+>>>>>>> 29252fb422b89c4863a9c11fdb29f535f41d624d
     end
   end
 
